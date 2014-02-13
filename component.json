@@ -1,0 +1,21 @@
+{
+  "name": "superapi",
+  "repo": "hkjels/superapi",
+  "description": "Use superagent with a base-url for all requests",
+  "version": "0.0.1",
+  "keywords": ["api", "superapi", "superagent", "request"],
+  "dependencies": {
+    "component/each": "*",
+    "segmentio/extend": "*",
+    "visionmedia/superagent": "*"
+  },
+  "development": {
+    "visionmedia/mocha": "*",
+    "component/assert": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

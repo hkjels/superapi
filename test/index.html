@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+  <head>
+    <meta charset="utf-8" />
+    <title>SuperAPI</title>
+    <link rel="stylesheet" href="./mocha.css" />
+    <script src="./mocha.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>mocha.setup({ui: 'bdd'})</script>
+    <script src="../build/build.js"></script>
+    <script src="./test.js"></script>
+    <script>mocha.run()</script>
+  </body>
+</html>
