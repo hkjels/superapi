@@ -41,6 +41,12 @@ function SuperApi(baseurl, headers){
       return req;
     };
   });
+  request.del = function(url, fn){
+    var req = request('DELETE', url);
+    if (request.headers) req.set(request.headers);
+    if (fn) req.end(fn);
+    return req;
+  }
   return request;
 };
 
