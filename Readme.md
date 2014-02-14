@@ -1,7 +1,10 @@
 
-# superapi
+# SuperAPI
 
-  Use superagent with a base-url for all requests
+  A wrapper around [superagent](//visionmedia/superagent) to make it easier
+  to work with API's. It basically allows you to instantiate superagent with
+  a base-url and some headers, so you don't need to repeat yourself as much.
+
 
 ## Installation
 
@@ -9,15 +12,25 @@
 
     $ component install hkjels/superapi
 
-## API
 
+## Usage
+
+```javascript
+var apiurl = 'http://example.com/';
+var apiheaders = {'Authorization': 'Bearer 0/sometoken'};
+var superapi = require('superapi')(apiurl, apiheaders);
+
+superapi.get('foo/bar').end(cb);
+// GET http://example.com/foo/bar
+// Authorozation: Bearer 0/sometoken
+```
 
 
 ## License
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <copyright holders>
+  Copyright (c) 2014 Henrik Kjelsberg
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
